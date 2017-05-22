@@ -1,5 +1,4 @@
 import React from 'react'
-import ReactDOM from 'react-dom'
 
 class Mass extends React.Component{
 	constructor(props){
@@ -48,4 +47,4 @@ class Mass extends React.Component{
 
 }
 
-export default Mass;
+export default Mass

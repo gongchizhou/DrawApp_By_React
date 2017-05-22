@@ -1,5 +1,4 @@
 import React from 'react'
-import ReactDOM from 'react-dom'
 
 class ColorPicker extends React.Component{
 	constructor(props){
@@ -25,4 +24,4 @@ class ColorPicker extends React.Component{
 
 }
 
-export default ColorPicker;
+export default ColorPicker

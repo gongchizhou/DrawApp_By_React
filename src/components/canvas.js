@@ -6,7 +6,7 @@ class Canvas extends React.Component{
 		super(props);
 		this.state = {
 			enable: false,
-			start: false,
+			start: false
 		};
 	}
 
@@ -94,4 +94,4 @@ class Canvas extends React.Component{
 
 }
 
-export default Canvas;
+export default Canvas

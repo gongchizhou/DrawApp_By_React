@@ -1,5 +1,4 @@
 import React from 'react'
-import ReactDOM from 'react-dom'
 
 class Eraser extends React.Component{
 	constructor(props){
@@ -37,4 +36,4 @@ class Eraser extends React.Component{
 
 }
 
-export default Eraser;
+export default Eraser

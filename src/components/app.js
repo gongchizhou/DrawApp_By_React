@@ -1,5 +1,4 @@
 import React from 'react'
-import ReactDOM from 'react-dom'
 import Canvas from './Canvas'
 import Brush from './Brush'
 import Eraser from './Eraser'
@@ -96,4 +95,4 @@ class App extends React.Component{
 
 }
 
-export default App;
+export default App

@@ -1,5 +1,4 @@
 import React from 'react'
-import ReactDOM from 'react-dom'
 
 class SizeRange extends React.Component{
 	constructor(props){
@@ -28,4 +27,4 @@ class SizeRange extends React.Component{
 
 }
 
-export default SizeRange;
+export default SizeRange
