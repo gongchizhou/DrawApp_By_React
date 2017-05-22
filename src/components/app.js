@@ -1,14 +1,14 @@
-import React, { Component } from 'react';
+import React from 'react';
 import ReactDOM from 'react-dom';
-import Canvas from './canvas';
-import Brush from './brush';
-import Eraser from './eraser';
-import Scatter from './scatter';
-import Mass from './mass';
-import ColorPicker from './colorPicker';
-import SizeRange from './sizeRange';
+import Canvas from './Canvas';
+import Brush from './Brush';
+import Eraser from './Eraser';
+import Scatter from './Scatter';
+import Mass from './Mass';
+import ColorPicker from './ColorPicker';
+import SizeRange from './SizeRange';
 
-class App extends Component{
+class App extends React.Component{
 	constructor(props){
 		super(props);
 		this.state = {

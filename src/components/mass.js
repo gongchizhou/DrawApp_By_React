@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
+import React from 'react';
 import ReactDOM from 'react-dom';
 
-class Mass extends Component{
+class Mass extends React.Component{
 	constructor(props){
 		super(props);
 	}

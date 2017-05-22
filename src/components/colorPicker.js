@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
+import React from 'react';
 import ReactDOM from 'react-dom';
 
-class ColorPicker extends Component{
+class ColorPicker extends React.Component{
 	constructor(props){
 		super(props);
 	}

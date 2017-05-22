@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
+import React from 'react';
 import ReactDOM from 'react-dom';
 
-class Canvas extends Component{
+class Canvas extends React.Component{
 	constructor(props){
 		super(props);
 		this.state = {

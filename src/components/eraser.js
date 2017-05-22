@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
+import React from 'react';
 import ReactDOM from 'react-dom';
 
-class Eraser extends Component{
+class Eraser extends React.Component{
 	constructor(props){
 		super(props);
 	}
