@@ -6,5 +6,5 @@ require('./css/main.css');
 
 ReactDOM.render(
 <App />,
-document.body
+document.getElementById('content')
 );
