@@ -1,7 +1,6 @@
-import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
+import React from 'react'
 
-class Brush extends Component{
+class Brush extends React.Component{
 	constructor(props){
 		super(props);
 	}
@@ -22,7 +21,7 @@ class Brush extends Component{
 			cxt.lineTo(x,y);
 			cxt.strokeStyle = color;
 			cxt.lineCap = 'round';
-			cxt.lineWidth = 2*size;
+			cxt.lineWidth = size;
 			cxt.stroke();
 		}
 	}
@@ -37,4 +36,4 @@ class Brush extends Component{
 
 }
 
-export default Brush;
+export default Brush

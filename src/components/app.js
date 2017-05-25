@@ -72,23 +72,23 @@ class App extends React.Component{
 			drawMass={this.state.drawMass}/>
 
 			<Brush 
-			setOption={ ops => this.setOption(ops)} 
-			paint={ f => this.paint(f)}/>
+			setOption={this.setOption.bind(this)} 
+			paint={this.paint.bind(this)}/>
 
 			<Eraser 
-			setOption={ ops => this.setOption(ops)} 
-			clear={ f => this.clear(f)}/>
+			setOption={this.setOption.bind(this)} 
+			clear={this.clear.bind(this)}/>
 
 			<Scatter 
-			setOption={ ops => this.setOption(ops)} 
-			drawScatter={ f => this.drawScatter(f)}/>
+			setOption={this.setOption.bind(this)} 
+			drawScatter={this.drawScatter.bind(this)}/>
 			
 			<Mass 
-			setOption={ ops => this.setOption(ops)} 
-			drawMass={ f => this.drawMass(f)}/>
+			setOption={this.setOption.bind(this)} 
+			drawMass={this.drawMass.bind(this)}/>
 
-			<SizeRange setSize={ s => this.setSize(s)}/>
-			<ColorPicker setColor={ c => this.setColor(c)}/>
+			<SizeRange setSize={this.setSize.bind(this)}/>
+			<ColorPicker setColor={this.setColor.bind(this)}/>
 		</div>
 		);
 	}

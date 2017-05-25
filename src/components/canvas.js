@@ -11,13 +11,20 @@ class Canvas extends React.Component{
 	}
 
 	componentDidMount(){
-		const canvas = ReactDOM.findDOMNode(this);
-		canvas.width = window.innerWidth - 10;
-		canvas.height = 0.8 * window.innerHeight;
+		this.setUp();
 
 		canvas.addEventListener('mousedown',this.start.bind(this));
 		canvas.addEventListener('mousemove',this.move.bind(this));
 		canvas.addEventListener('mouseup',this.end.bind(this));
+		canvas.addEventListener('mouseout',this.end.bind(this));
+
+		window.addEventListener('resize',this.setUp.bind(this));
+	}
+
+	setUp(){
+		const canvas = ReactDOM.findDOMNode(this);
+		canvas.width = window.innerWidth - 10;
+		canvas.height = 0.8 * window.innerHeight;	
 	}
 
 	start(e){

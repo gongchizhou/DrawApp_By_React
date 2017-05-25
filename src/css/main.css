@@ -56,7 +56,7 @@ body{
 .mass{
 	background-image: url(../images/mass.png);
 }
-input[type="range"],.color{
+.range,.color{
 	position: absolute;
 	left: 50%;
 	top: 50%;
@@ -65,27 +65,27 @@ input[type="range"],.color{
   	transform: translate(-50%,-50%); 
   	cursor: pointer;
 }
-input[type=range] {
-    -webkit-appearance: none;
-    width: 80%;
-    border-radius: 4px;
-    background-color: transparent;
+.range{
+	position: relative;
+	width: 70%;
+	height: 6px;
+	border-radius: 4px;
+	background-color: #292735;
 }
-input[type=range]::-webkit-slider-runnable-track {
-    height: 6px;
-    border-radius: 4px; 
-    background: #292735;
+.track{
+	width: 0px;
+	height: 6px;
+	border-radius: 4px;
+	background-color: #211f2b;
 }
-input[type=range]::-moz-range-progress {
-    height: 6px;
-    border-radius: 4px; 
-    background-color: #292735;
-}
-input[type=range]::-webkit-slider-thumb {
-    -webkit-appearance: none;
+.handle{
+	position: absolute;
+	left: 0;
+	top: 50%;
     width: 24px;
     height: 24px;
-    margin-top: -9px; 
+    margin-top: -12px; 
+    margin-left: -12px; 
     background-color: #e3e3e3; 
     border-radius: 50%; 
 }
