@@ -12,7 +12,7 @@ class App extends React.Component{
 		super(props);
 		this.state = {
 			option: 'brush',
-			color: '#000000',//must be Hex full name
+			color: '#000000',//must be two-digit Hex numbers.
 			size: 1
 		};
 	}
