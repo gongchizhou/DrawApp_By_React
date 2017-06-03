@@ -29,6 +29,14 @@ body{
 .ctrl{
 	width: 20%;
 }
+@media(max-width: 768px){
+	.ops{
+		width: 25%;
+	}
+	.ctrl{
+		width: 50%;
+	}
+}
 .inner{
 	position: relative;
 	background-color: #191722;

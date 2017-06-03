@@ -13,10 +13,10 @@ class Canvas extends React.Component{
 	componentDidMount(){
 		this.setUp();
 
-		canvas.addEventListener('mousedown',this.start.bind(this));
-		canvas.addEventListener('mousemove',this.move.bind(this));
-		canvas.addEventListener('mouseup',this.end.bind(this));
-		canvas.addEventListener('mouseout',this.end.bind(this));
+		//canvas.addEventListener('mousedown',this.start.bind(this));
+		//canvas.addEventListener('mousemove',this.move.bind(this));
+		//canvas.addEventListener('mouseup',this.end.bind(this));
+		//canvas.addEventListener('mouseout',this.end.bind(this));
 
 		window.addEventListener('resize',this.setUp.bind(this));
 	}
@@ -95,7 +95,14 @@ class Canvas extends React.Component{
 
 	render(){
 		return (
-		<canvas id="canvas"/>
+		<canvas id="canvas" 
+		onMouseDown={this.start.bind(this)}
+		onMouseMove={this.move.bind(this)}
+		onMouseUp={this.end.bind(this)}
+		onTouchStart={this.start.bind(this)}
+		onTouchMove={this.move.bind(this)}
+		onTouchEnd={this.end.bind(this)}
+		/>
 		);
 	}
 

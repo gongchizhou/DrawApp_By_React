@@ -21,18 +21,18 @@ class SizeRange extends React.Component{
 		});		
 	}
 
-	handleMouseDown(e){
+	handleStart(e){
 		let left = parseInt(this.refs.handle.style.left||0)*this.state.totalen/100;
 		this.setState({
 			isDragging: true,
 			startLeft: left,
-			startX: e.clientX
+			startX: e.clientX || e.changeTouches[0].clientX
 		})
 	}
 
-	handleMouseMove(e){
+	handleMove(e){
 		if(this.state.isDragging){
-			let dist = this.state.startLeft + e.clientX - this.state.startX;
+			let dist = this.state.startLeft + (e.clientX || e.changeTouches[0].clientX) - this.state.startX;
 			if(dist<0){
 				dist = 0;
 			}
@@ -49,7 +49,7 @@ class SizeRange extends React.Component{
 		e.preventDefault();
 	}
 
-	handleMouseEnd(e){
+	handleEnd(e){
 		this.setState({
 			isDragging: false,
 		})
@@ -61,7 +61,15 @@ class SizeRange extends React.Component{
 				<div className="inner">
 					<div className="range" ref="range">
 						<div className="track" ref="track" style={{'width': this.state.percent + '%'}}></div>
-						<div className="handle" ref="handle" style={{'left': this.state.percent + '%'}} onMouseDown={this.handleMouseDown.bind(this)} onMouseMove={this.handleMouseMove.bind(this)} onMouseUp={this.handleMouseEnd.bind(this)} onMouseOut={this.handleMouseEnd.bind(this)}></div>
+						<div className="handle" ref="handle" style={{'left': this.state.percent + '%'}} 
+						onMouseDown={this.handleStart.bind(this)} 
+						onMouseMove={this.handleMove.bind(this)} 
+						onMouseUp={this.handleEnd.bind(this)} 
+						onMouseOut={this.handleEnd.bind(this)}
+						onTouchStart={this.handleStart.bind(this)}
+						onTouchMove={this.handleMove.bind(this)}
+						onTouchEnd={this.handleEnd.bind(this)} >
+						</div>
 					</div>
 				</div>
 			</div>
