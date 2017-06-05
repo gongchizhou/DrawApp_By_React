@@ -13,28 +13,26 @@ class Canvas extends React.Component{
 	componentDidMount(){
 		this.setUp();
 
-		//canvas.addEventListener('mousedown',this.start.bind(this));
-		//canvas.addEventListener('mousemove',this.move.bind(this));
-		//canvas.addEventListener('mouseup',this.end.bind(this));
-		//canvas.addEventListener('mouseout',this.end.bind(this));
-
 		window.addEventListener('resize',this.setUp.bind(this));
 	}
 
 	setUp(){
 		const canvas = ReactDOM.findDOMNode(this);
 		canvas.width = window.innerWidth - 10;
-		canvas.height = 0.8 * window.innerHeight;	
+		canvas.height = 0.8 * window.innerHeight;
+		if(window.innerWidth < 768)	{
+			canvas.height = 0.7 * window.innerHeight;
+		}
 	}
 
 	start(e){
 		this.setState({ 
 			enable: true,
-			x: e.clientX,
-			y: e.clientY,
+			x: e.clientX || e.touches[0].clientX,
+			y: e.clientY || e.touches[0].clientY,
 			start_pt: {
-				x: e.clientX,
-				y: e.clientY
+				x: e.clientX || e.touches[0].clientX,
+				y: e.clientY || e.touches[0].clientY
 				}
 		});
 
@@ -46,8 +44,8 @@ class Canvas extends React.Component{
 		if(this.state.enable){
 			this.setState({ 
 				start: true,
-				x: e.clientX,
-				y: e.clientY
+				x: e.clientX || e.touches[0].clientX,
+				y: e.clientY || e.touches[0].clientY
 			});
 			
 			this.draw();
@@ -99,6 +97,7 @@ class Canvas extends React.Component{
 		onMouseDown={this.start.bind(this)}
 		onMouseMove={this.move.bind(this)}
 		onMouseUp={this.end.bind(this)}
+		onMouseOut={this.end.bind(this)}
 		onTouchStart={this.start.bind(this)}
 		onTouchMove={this.move.bind(this)}
 		onTouchEnd={this.end.bind(this)}

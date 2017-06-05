@@ -26,13 +26,14 @@ class SizeRange extends React.Component{
 		this.setState({
 			isDragging: true,
 			startLeft: left,
-			startX: e.clientX || e.changeTouches[0].clientX
+			startX: e.clientX || e.touches[0].clientX
 		})
 	}
 
 	handleMove(e){
 		if(this.state.isDragging){
-			let dist = this.state.startLeft + (e.clientX || e.changeTouches[0].clientX) - this.state.startX;
+			let currentX = e.clientX || e.touches[0].clientX;
+			let dist = this.state.startLeft + currentX - this.state.startX;
 			if(dist<0){
 				dist = 0;
 			}
