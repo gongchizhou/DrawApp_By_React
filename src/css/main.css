@@ -49,11 +49,12 @@ body{
 	}
 	.ctrl{
 		width: 50%;
+		padding-top: 0!important;
 	}
 	.inner{
-		height: calc(15vh - 20px);
-		height: -webkit-calc(15vh - 20px);
-		height: -moz-calc(15vh - 20px);
+		height: calc(15vh - 15px);
+		height: -webkit-calc(15vh - 15px);
+		height: -moz-calc(15vh - 15px);
 	}
 }
 .ctrl .inner{

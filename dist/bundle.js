@@ -59,7 +59,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "4c880a430a4f37a13608"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "add87c2a351467d062ba"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
@@ -7277,7 +7277,7 @@ exports = module.exports = __webpack_require__(145)(undefined);
 
 
 // module
-exports.push([module.i, "*{\n\tmargin: 0;\n\tpadding: 0;\n\tbox-sizing: border-box;\n\t-webkit-box-sizing: border-box;\n\t-moz-box-sizing: border-box;\n}\nhtml,body{\n\twidth: 100%;\n\theight: 100%;\n}\nhtml{\n  -webkit-tap-highlight-color: transparent; \n}\nbody{\n\tbackground-color: #0e0e0e;\n}\n#content{\n\theight: 100vh;\n\tposition: relative;\n}\n#canvas{\n\tdisplay: block;\n\tmargin: 0 auto;\n\tbackground-color: #fff;\n}\n.ops{\n\tfloat: left;\n\tpadding:10px 5px;\n\twidth: 15%;\n}\n.ctrl{\n\twidth: 20%;\n}\n.inner{\n\tposition: relative;\n\tbackground-color: #191722;\n\tbackground-repeat: no-repeat;\n\tbackground-position: center;\n\tbackground-size: 40px 40px;\n\tcursor: pointer;\n\theight: calc(20vh - 20px);\n\theight: -webkit-calc(20vh - 20px);\n\theight: -moz-calc(20vh - 20px);\n}\n@media(max-width: 768px){\n\t.ops{\n\t\twidth: 25%;\n\t}\n\t.ctrl{\n\t\twidth: 50%;\n\t}\n\t.inner{\n\t\theight: calc(15vh - 20px);\n\t\theight: -webkit-calc(15vh - 20px);\n\t\theight: -moz-calc(15vh - 20px);\n\t}\n}\n.ctrl .inner{\n\tcursor: default;\n}\n.brush{\n\tbackground-image: url(" + __webpack_require__(315) + ");\n}\n.eraser{\n\tbackground-image: url(" + __webpack_require__(316) + ");\n}\n.scatter{\n\tbackground-image: url(" + __webpack_require__(318) + ");\n}\n.mass{\n\tbackground-image: url(" + __webpack_require__(317) + ");\n}\n.range,.color{\n\tposition: absolute;\n\tleft: 50%;\n\ttop: 50%;\n    -webkit-transform: translate(-50%,-50%);  \n    -moz-transform: translate(-50%,-50%);  \n  \ttransform: translate(-50%,-50%); \n  \tcursor: pointer;\n}\n.range{\n\tposition: relative;\n\twidth: 70%;\n\theight: 6px;\n\tborder-radius: 4px;\n\tbackground-color: #292735;\n}\n.track{\n\twidth: 0px;\n\theight: 6px;\n\tborder-radius: 4px;\n\tbackground-color: #211f2b;\n}\n.handle{\n\tposition: absolute;\n\tleft: 0;\n\ttop: 50%;\n    width: 24px;\n    height: 24px;\n    margin-top: -12px; \n    margin-left: -12px; \n    background-color: #e3e3e3; \n    border-radius: 50%; \n}\ninput[type=\"color\"]{\n\tposition: absolute;\n\tleft: -9999px;\n}\n.color{\n\tdisplay: block;\n\twidth: 40px;\n\theight: 40px;\n\tbackground-color: #000000;\n\tborder:2px solid #e3e3e3;\n\tborder-radius: 50%;\n}", ""]);
+exports.push([module.i, "*{\n\tmargin: 0;\n\tpadding: 0;\n\tbox-sizing: border-box;\n\t-webkit-box-sizing: border-box;\n\t-moz-box-sizing: border-box;\n}\nhtml,body{\n\twidth: 100%;\n\theight: 100%;\n}\nhtml{\n  -webkit-tap-highlight-color: transparent; \n}\nbody{\n\tbackground-color: #0e0e0e;\n}\n#content{\n\theight: 100vh;\n\tposition: relative;\n}\n#canvas{\n\tdisplay: block;\n\tmargin: 0 auto;\n\tbackground-color: #fff;\n}\n.ops{\n\tfloat: left;\n\tpadding:10px 5px;\n\twidth: 15%;\n}\n.ctrl{\n\twidth: 20%;\n}\n.inner{\n\tposition: relative;\n\tbackground-color: #191722;\n\tbackground-repeat: no-repeat;\n\tbackground-position: center;\n\tbackground-size: 40px 40px;\n\tcursor: pointer;\n\theight: calc(20vh - 20px);\n\theight: -webkit-calc(20vh - 20px);\n\theight: -moz-calc(20vh - 20px);\n}\n@media(max-width: 768px){\n\t.ops{\n\t\twidth: 25%;\n\t}\n\t.ctrl{\n\t\twidth: 50%;\n\t\tpadding-top: 0!important;\n\t}\n\t.inner{\n\t\theight: calc(15vh - 15px);\n\t\theight: -webkit-calc(15vh - 15px);\n\t\theight: -moz-calc(15vh - 15px);\n\t}\n}\n.ctrl .inner{\n\tcursor: default;\n}\n.brush{\n\tbackground-image: url(" + __webpack_require__(315) + ");\n}\n.eraser{\n\tbackground-image: url(" + __webpack_require__(316) + ");\n}\n.scatter{\n\tbackground-image: url(" + __webpack_require__(318) + ");\n}\n.mass{\n\tbackground-image: url(" + __webpack_require__(317) + ");\n}\n.range,.color{\n\tposition: absolute;\n\tleft: 50%;\n\ttop: 50%;\n    -webkit-transform: translate(-50%,-50%);  \n    -moz-transform: translate(-50%,-50%);  \n  \ttransform: translate(-50%,-50%); \n  \tcursor: pointer;\n}\n.range{\n\tposition: relative;\n\twidth: 70%;\n\theight: 6px;\n\tborder-radius: 4px;\n\tbackground-color: #292735;\n}\n.track{\n\twidth: 0px;\n\theight: 6px;\n\tborder-radius: 4px;\n\tbackground-color: #211f2b;\n}\n.handle{\n\tposition: absolute;\n\tleft: 0;\n\ttop: 50%;\n    width: 24px;\n    height: 24px;\n    margin-top: -12px; \n    margin-left: -12px; \n    background-color: #e3e3e3; \n    border-radius: 50%; \n}\ninput[type=\"color\"]{\n\tposition: absolute;\n\tleft: -9999px;\n}\n.color{\n\tdisplay: block;\n\twidth: 40px;\n\theight: 40px;\n\tbackground-color: #000000;\n\tborder:2px solid #e3e3e3;\n\tborder-radius: 50%;\n}", ""]);
 
 // exports
 
@@ -15136,7 +15136,7 @@ var Canvas = function (_React$Component) {
 		key: 'componentDidMount',
 		value: function componentDidMount() {
 			this.setUp();
-
+			//canvas.addEventListener('mousedown',this.start.bind(this));
 			window.addEventListener('resize', this.setUp.bind(this));
 		}
 	}, {
@@ -15425,27 +15425,29 @@ var Mass = function (_React$Component) {
 	}, {
 		key: 'draw',
 		value: function draw(x, y, start_pt, cxt, color, size) {
-			var dist = Math.sqrt((start_pt.x - x) * (start_pt.x - x) + (start_pt.y - y) * (start_pt.y - y));
+			if (start_pt) {
+				var dist = Math.sqrt((start_pt.x - x) * (start_pt.x - x) + (start_pt.y - y) * (start_pt.y - y));
 
-			var rad = Math.atan2(y - start_pt.y, x - start_pt.x);
+				var rad = Math.atan2(y - start_pt.y, x - start_pt.x);
 
-			var x1 = start_pt.x + dist * Math.cos(rad);
-			var y1 = start_pt.y + dist * Math.sin(rad);
+				var x1 = start_pt.x + dist * Math.cos(rad);
+				var y1 = start_pt.y + dist * Math.sin(rad);
 
-			var x2 = start_pt.x + dist * Math.cos(Math.PI + rad);
-			var y2 = start_pt.y + dist * Math.sin(Math.PI + rad);
+				var x2 = start_pt.x + dist * Math.cos(Math.PI + rad);
+				var y2 = start_pt.y + dist * Math.sin(Math.PI + rad);
 
-			cxt.beginPath();
-			cxt.moveTo(x1, y1);
-			cxt.lineTo(x2, y2);
-			cxt.lineCap = 'butt';
-			cxt.lineWidth = size;
+				cxt.beginPath();
+				cxt.moveTo(x1, y1);
+				cxt.lineTo(x2, y2);
+				cxt.lineCap = 'butt';
+				cxt.lineWidth = size;
 
-			var r = parseInt(color.slice(1, 3), 16);
-			var g = parseInt(color.slice(3, 5), 16);
-			var b = parseInt(color.slice(5), 16);
-			cxt.strokeStyle = 'rgba(' + r + ',' + g + ',' + b + ',' + Math.random() + ')';
-			cxt.stroke();
+				var r = parseInt(color.slice(1, 3), 16);
+				var g = parseInt(color.slice(3, 5), 16);
+				var b = parseInt(color.slice(5), 16);
+				cxt.strokeStyle = 'rgba(' + r + ',' + g + ',' + b + ',' + Math.random() + ')';
+				cxt.stroke();
+			}
 		}
 	}, {
 		key: 'render',

@@ -12,7 +12,7 @@ class Canvas extends React.Component{
 
 	componentDidMount(){
 		this.setUp();
-
+//canvas.addEventListener('mousedown',this.start.bind(this));
 		window.addEventListener('resize',this.setUp.bind(this));
 	}
 
